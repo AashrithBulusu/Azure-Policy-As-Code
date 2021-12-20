@@ -1,0 +1,513 @@
+{
+ "properties": {
+  "displayName": "Apply Diagnoistic settings To all Applicable resources",
+  "policyType": "Custom",
+  "description": "Apply Diagnoistic settings To all Applicable resources",
+  "metadata": {
+   "category": "Monitoring",
+   "parameterScopes": {
+    "logAnalytics": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353"
+   },
+   "createdBy": "4a61d488-7511-48b4-bbc8-26538261e87b",
+   "createdOn": "2021-12-20T10:16:34.1501782Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {
+   "Log Analytics workspace": {
+    "type": "string",
+    "metadata": {
+     "displayName": "Log Analytics workspace",
+     "strongType": "omsWorkspace"
+    },
+    "defaultValue": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/resourcegroups/m2gen-poc/providers/microsoft.operationalinsights/workspaces/diag-setting-law"
+   }
+  },
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Azure Automation Accounts - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/aa-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Azure Container Instances - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/aci-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Azure Container Registries - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/acr-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Azure Kubernetes Service - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/aks-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Azure Analysis Services - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/analysisService-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for API Management services - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/apiMgmt-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Application Gateways - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/appGw-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Azure Batch accounts - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/batch-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for CDN Endpoints - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/cdnEndpoints-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Cognitive Services - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/cognitive-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Cosmos DB - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/cosmosDBs-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Data Factory - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/dataFactory-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Data Lake Analytics - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/dlanalytics-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Data Lake Storage - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/dlstore-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Event Grid Subscriptions - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/eventGridSub-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Event Grid Topics - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/eventGridTopic-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Event Hub Namespaces - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/eventHub-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Express Routes Circuits - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/expressRoutes-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Azure Firewalls - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/firewall-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for HDInsight - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/hdInsight-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for IoT Hubs - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/iotHub-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Key Vaults - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/kv-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Load Balancers - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/lb-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Logic Apps Integration Accounts - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/logicApps-integrationAccounts-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Logic Apps workflows - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/logicApps-workflow-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for MySQL Databases - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/mySQL-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Network Interfaces - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/nic-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Network Security Groups - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/nsg-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Public IPs - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/pip-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for PostgreSQL Databases - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/postgreSQL-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Power BI Embedded - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/powerBIEmbedded-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Recovery Vaults - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/recoveryVault-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Redis Cache - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/redisCache-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Azure Relay - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/relay-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Search Services - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/searchServices-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Service Bus namespaces - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/serviceBus-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for SignalR - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/signalR-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for SQL Managed Instances - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/sql-mi-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for SQL Databases - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/sqlDBs-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for SQL Elastic Pools - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/sqlElasticPools-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Stream Analytics - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/streamAnalytics-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Time Series Insights - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/timeSeriesInsights-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Azure Traffic Manager - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/trafficManager-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Virtual Machines - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/vm-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Virtual Machine Scale Sets - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/vmss-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Virtual Networks - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/vnet-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Virtual Network Gateways - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/vnetGW-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Apply diagnostic settings for Azure App Service Plans - Log Analytics_1",
+    "policyDefinitionId": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policyDefinitions/webServerFarm-diagnostic-settings-policyDef",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics workspace')]"
+     }
+    },
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/subscriptions/95bded31-2521-4090-8076-cbc5fe5ae353/providers/Microsoft.Authorization/policySetDefinitions/2edf69e108a541899f509380",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "2edf69e108a541899f509380"
+}
